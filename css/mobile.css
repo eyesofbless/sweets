@@ -1,0 +1,13 @@
+
+
+@media (max-width: 767px) {
+    .sub-header__content button {
+        display: none;
+    }
+    .sub-header__wrapper {
+        width: 100%;
+    }
+    .sub-header__content {
+        gap: 30px ;
+    }
+}
