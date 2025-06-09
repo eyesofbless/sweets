@@ -22,17 +22,20 @@
         display: none;
     }
 
+    .sub-header__content button {
+        order: 4;
+    }
+
     .sub-header__burger-icon {
         display: block;
     }
 
-    .sub-header__content nav {
-        display: none;
+    .sub-header__search-icon {
+        order: 5;
     }
 
-    .sub-header__wrapper {
-        flex-direction: row-reverse;
-        gap: 45px;
+    .sub-header__content nav {
+        display: none;
     }
 
     .sub-header__content .sup-header__languages {

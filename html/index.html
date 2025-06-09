@@ -6,42 +6,77 @@
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/tablet.css"/>
     <link rel="stylesheet" href="../css/mobile.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>sweets</title>
 </head>
 <body>
-    <header>
-        <div class="b-sup-header">
-            <div class="sup-header__content">
-                <div class="sup-header__languages">
-                    <b>Ru</b><span>|</span><span>En</span>
-                </div>
-                <div class="sup-header__contacts">
-                    <span>350039 Россия, г. Краснодар, проезд Майский, 5</span>
-                    <span>+7 918 448 25 93</span>
-                    <span>+7 861 265 09 13</span>
-                    <span>fyntik_01@list.ru</span>
-                </div>
+<header>
+    <div class="b-sup-header">
+        <div class="sup-header__content">
+            <div class="sup-header__languages">
+                <b>Ru</b><span>|</span><span>En</span>
+            </div>
+            <div class="sup-header__contacts">
+                <span>350039 Россия, г. Краснодар, проезд Майский, 5</span>
+                <span>+7 918 448 25 93</span>
+                <span>+7 861 265 09 13</span>
+                <span>fyntik_01@list.ru</span>
             </div>
         </div>
-        <div class="b-sub-header">
-            <div class="sub-header__content">
-                <img class="sub-header__burger-icon" src="../images/burger-icon.png" alt="logo">
-                <img class="sub-header__logo" src="../images/logo.png" alt="logo">
-                <nav>
-                    <a >О НАС</a>
-                    <a>ПРОДУКЦИЯ</a>
-                    <a>СОТРУДНИЧЕСТВО</a>
-                    <a>КОНТАКТЫ</a>
-                </nav>
-                <div class="sub-header__wrapper">
-                    <img class="sub-header__search-icon" src="../images/search-icon.png">
-                    <button>ПРАЙС-ЛИСТ</button>
-                </div>
-                <div class="sup-header__languages">
-                    <b>Ru</b><span>|</span><span>En</span>
-                </div>
+    </div>
+    <div class="b-sub-header">
+        <div class="sub-header__content">
+            <img class="sub-header__burger-icon" src="../images/burger-icon.png" alt="logo">
+            <img class="sub-header__logo" src="../images/logo.png" alt="logo">
+            <nav>
+                <a>О НАС</a>
+                <a>ПРОДУКЦИЯ</a>
+                <a>СОТРУДНИЧЕСТВО</a>
+                <a>КОНТАКТЫ</a>
+            </nav>
+            <img class="sub-header__search-icon" src="../images/search-icon.png">
+            <button>ПРАЙС-ЛИСТ</button>
+            <div class="sup-header__languages">
+                <b>Ru</b><span>|</span><span>En</span>
             </div>
         </div>
-    </header>
+    </div>
+</header>
+<main>
+    <div class="b-hero">
+        <div class="swiper-button-prev hero__arrow-wrapper">
+            <div class="hero__arrow">
+                <i class="hero__arrow-left"></i>
+            </div>
+        </div>
+        <div class="swiper hero__sliders">
+            <div class="swiper-wrapper hero__sliders-wrapper">
+                <div class="swiper-slide hero__slider" data-bg="/images/hero.png">
+                    <span>Какао 3в1</span>
+                    <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
+                    <span>Вкус, любимый <br> с детства</span>
+                </div>
+                <div class="swiper-slide hero__slider" data-bg="/images/hero2.jpg">
+                    <span>Какао 3в2</span>
+                    <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
+                    <span>Вкус, любимый <br> с детства</span>
+                </div>
+                <div class="swiper-slide hero__slider" data-bg="/images/hero.png">
+                    <span>Какао 3в3</span>
+                    <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
+                    <span>Вкус, любимый <br> с детства</span>
+                </div>
+            </div>
+            <div class="swiper-pagination hero__pagination"></div>
+        </div>
+        <div class="swiper-button-next hero__arrow-wrapper">
+            <div class="hero__arrow">
+                <i class="hero__arrow-right"></i>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../js/swiper.js"></script>
 </body>
 </html>
