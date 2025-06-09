@@ -1,0 +1,62 @@
+@media (min-width: 768px) and (max-width: 1024px ) {
+    .b-sub-header {
+        font-size: 13px;
+    }
+
+    .sub-header__content button {
+        font-size: 13px;
+    }
+
+    .sub-header__logo {
+        width: 150px;
+        height: 80px;
+    }
+
+    .sub-header__content nav {
+        gap:20px;
+    }
+
+    .products__item:last-child {
+        grid-column: span 1;
+    }
+
+    .products__item-desktop {
+        display: none;
+    }
+
+    .products__item-tablet {
+        display: block;
+    }
+
+    .b-hero {
+        height: 375px;
+    }
+}
+
+@media (max-width: 880px) {
+    .b-sup-header {
+        display: none;
+    }
+
+    .sub-header__content button {
+        order: 4;
+    }
+
+    .sub-header__burger-icon {
+        display: block;
+    }
+
+    .sub-header__search-icon {
+        order: 5;
+    }
+
+    .sub-header__content nav {
+        display: none;
+    }
+
+    .sub-header__content .sup-header__languages {
+        display: flex;
+    }
+
+
+}
