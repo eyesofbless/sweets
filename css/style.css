@@ -97,50 +97,58 @@ header {
     order: 6;
 }
 
+.js-hero-sliders {
+    --swiper-theme-color: white;
+}
+
 /*hero*/
 
 .b-hero {
-    width: 100%;
-    height: 100vh;
     display: flex;
-    gap: 21px;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 649px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("/images/hero.png");
 }
 
-.swiper {
-    --swiper-theme-color:white;
+.hero__slider-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1170px;
+    width: 100%;
+    padding: 52px 30px;
+    box-sizing: border-box;
 }
 
-.swiper.hero__sliders {
-    position: initial;
+.b-hero .hero__sliders {
     width: 100%;
-    max-width: 1170px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
     height: 100%;
-    padding: 52px 0;
     box-sizing: border-box;
 }
 
-.swiper-slide.hero__slider {
+.b-hero .hero__slider {
     width: 100%;
     height: 100%;
     color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.swiper-pagination.hero__pagination {
-    position: initial;
+.b-hero .js-hero-pagination.hero__pagination {
+    /*position: initial;*/
+    bottom: 0;
+    top:auto;
 }
 
 
@@ -209,6 +217,74 @@ header {
 }
 
 .hero__arrow-right {
+    margin-right: 3px;
+    transform: rotate(-45deg);
+}
+
+/*products*/
+
+.b-products {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 91px 0 67px 0;
+}
+
+.products__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1170px;
+    width: 100%;
+}
+
+.products__content img {
+    width: 100%;
+}
+
+.products__item {
+    position: relative;
+    cursor: pointer;
+}
+
+.products__item:last-child {
+    grid-column: span 2;
+}
+
+.products__item-tablet {
+    display: none;
+}
+
+.products__item div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 37px 43px 0 43px;
+}
+
+.products__item div img {
+    width: 10px;
+    height: 18px;
+}
+
+.products__item span {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.products__item i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
     margin-right: 3px;
     transform: rotate(-45deg);
 }

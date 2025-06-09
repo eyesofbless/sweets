@@ -17,6 +17,48 @@
     }
 }
 
+@media (max-width: 768px) {
+    .swiper-button-prev.hero__arrow-wrapper,
+    .swiper-button-next.hero__arrow-wrapper {
+        display: none;
+    }
+
+    .hero__slider span:first-child {
+        font-size: 56px;
+    }
+
+    .hero__slider span:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .hero__slider span:last-child {
+        font-size: 30px;
+    }
+
+    .products__content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    .products__item:last-child {
+        grid-column: span 1;
+    }
+
+    .products__item-desktop {
+        display: none;
+    }
+
+    .products__item-tablet {
+        display: block;
+    }
+
+    .b-hero {
+        height: 375px;
+    }
+
+}
+
 @media (max-width: 880px) {
     .b-sup-header {
         display: none;
