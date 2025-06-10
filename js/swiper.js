@@ -25,3 +25,17 @@ function updateHeroBackground(activeSlide) {
     const bg = activeSlide.getAttribute('data-bg');
     document.querySelector('.b-hero').style.backgroundImage = `url(${bg})`;
 }
+
+
+const productsSwiper = new Swiper('.js-products-sliders', {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+        nextEl: '.js-products-next',
+        prevEl: '.js-products-prev',
+    },
+    pagination: {
+        el: '.js-products-pagination',
+        clickable: true,
+    },
+});

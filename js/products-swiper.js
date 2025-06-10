@@ -1,10 +1,9 @@
 const swiper = new Swiper('.js-products-sliders', {
-    slidesPerView: 1,
+    slidesPerView: 2,
     loop: true,
-    spaceBetween: 10,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.js-products-next',
+        prevEl: '.js-products-prev',
     },
     pagination: {
         el: '.js-products-pagination',
