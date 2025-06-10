@@ -31,7 +31,7 @@
 
 @media (max-width: 456px) {
 
-    .b-hero  {
+    .b-hero {
         position: relative;
     }
 
@@ -80,5 +80,23 @@
 
     .hero__slider-content {
         padding: 0 0;
+    }
+
+    /*product-description*/
+    .b-product-description h2 {
+        font-size: 24px;
+    }
+
+    .b-product-description p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .product-description__item h3 {
+        font-size: 14px;
+    }
+
+    .product-description__item span {
+        font-size: 14px;
     }
 }
