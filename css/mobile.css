@@ -31,6 +31,16 @@
 
 @media (max-width: 456px) {
 
+    .b-hero  {
+        position: relative;
+    }
+
+    .b-hero .js-hero-pagination.hero__pagination {
+        top: 220px;
+        left: 43%;
+        position: absolute;
+    }
+
     .sub-header__logo {
         width: 122px;
         height: 64px;
@@ -64,11 +74,11 @@
         height: 169px;
     }
 
-    .swiper {
+    .js-hero-sliders {
         --swiper-theme-color: #D4D4D4;
     }
 
     .hero__slider-content {
-        padding: 0 30px;
+        padding: 0 0;
     }
 }
