@@ -3,8 +3,8 @@ const swiper = new Swiper('.js-hero-sliders', {
     loop: true,
     spaceBetween: 10,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.js-hero-btn-next',
+        prevEl: '.js-hero-btn-prev',
     },
     pagination: {
         el: '.js-hero-pagination',
@@ -31,11 +31,26 @@ const productsSwiper = new Swiper('.js-products-sliders', {
     slidesPerView: 4,
     loop: true,
     navigation: {
-        nextEl: '.js-products-next',
-        prevEl: '.js-products-prev',
+        nextEl: '.js-products-btn-next',
+        prevEl: '.js-products-btn-prev',
     },
     pagination: {
         el: '.js-products-pagination',
         clickable: true,
+    },
+    spaceBetween: 30,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        812: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 4,
+        }
     },
 });
