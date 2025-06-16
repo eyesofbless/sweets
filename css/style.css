@@ -118,6 +118,12 @@ header {
     width: 22px;
     height: 22px;
     cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.header__bottom .header__bottom-search-icon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 
@@ -134,6 +140,11 @@ header {
 .header__bottom .header__bottom-content nav a {
     text-decoration: none;
     color: #333333;
+    transition: ease-in-out 0.1s;
+}
+
+.header__bottom .header__bottom-content nav a:hover {
+    opacity: 0.7;
 }
 
 
@@ -147,6 +158,11 @@ header {
     font-size: 16px;
     line-height: 100%;
     font-weight: 600;
+    transition: ease-in-out 0.2s;
+}
+
+.header__bottom .header__bottom-content button:hover {
+    background-color: #FEB81E;
 }
 
 .header__bottom .header__bottom-content .header__top-languages {
@@ -174,7 +190,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/images/hero.png");
+    background-image: url("/images/hero.webp");
 }
 
 .b-hero .hero__sliders {
@@ -274,6 +290,10 @@ main {
     transition: 0.3s;
 }
 
+.hero__arrow:hover {
+    background-color: #F2656B;
+}
+
 .hero__arrow i {
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -315,6 +335,11 @@ main {
 .b-products .products__item {
     position: relative;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.b-products .products__item:hover {
+    opacity: 0.7;
 }
 
 .b-products .products__item:last-child {
@@ -521,4 +546,82 @@ main {
 .b-products-sliders .hero__arrow-wrapper {
     position: initial;
     cursor: pointer;
+}
+
+/*advantages*/
+
+.b-advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 80px 30px;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+.b-advantages h2 {
+    text-align: center;
+    font-size: 34px;
+}
+
+.b-advantages p {
+    text-align: center;
+    max-width: 1170px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.b-advantages .advantages__rewards {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.b-advantages .advantages__rewards div:first-child {
+    margin-left: -180px;
+}
+
+.b-advantages .advantages__rewards-block {
+    position: relative;
+}
+
+.b-advantages .advantages__rewards-block img {
+    position: absolute;
+    bottom: 0;
+}
+
+.b-advantages .advantages__rewards-block img:nth-child(2) {
+    left: 60px;
+}
+
+.b-advantages .advantages__rewards-block img:last-child {
+    left: 120px;
+}
+
+.b-advantages .advantages__points {
+    max-width: 1170px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 53px;
+    margin-top: 89px;
+}
+
+.b-advantages .advantages__point {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.b-advantages .advantages__point img {
+    width: 60px;
+    height: 60px;
+}
+
+.b-advantages .advantages__point p {
+    text-align: left;
+    margin: 0;
 }

@@ -34,6 +34,17 @@
 
 }
 
+@media (max-width: 505px) {
+    .b-advantages .advantages__rewards {
+        flex-direction: column;
+    }
+
+    .b-advantages .advantages__rewards-block {
+        width: 210px;
+        height: 100px;
+    }
+}
+
 @media (max-width: 456px) {
 
     /*header*/
