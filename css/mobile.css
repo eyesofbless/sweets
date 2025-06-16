@@ -2,20 +2,20 @@
 
     /*header*/
 
-    .header__bottom .header__bottom-search-icon {
+    .b-header .header__bottom .header__bottom-search-icon {
         order: 4;
         margin-left: auto;
     }
 
-    .header__bottom .header__bottom-content button {
+    .b-header .header__bottom .header__bottom-content button {
         order: 3;
     }
 
-    .header__bottom .header__bottom-content button {
+    .b-header .header__bottom .header__bottom-content button {
         display: none;
     }
 
-    .header__bottom .header__bottom-content {
+    .b-header .header__bottom .header__bottom-content {
         gap: 30px;
     }
 
@@ -39,9 +39,9 @@
         flex-direction: column;
     }
 
-    .b-advantages .advantages__rewards-block {
-        width: 210px;
-        height: 100px;
+    .b-advantages p {
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
@@ -49,7 +49,7 @@
 
     /*header*/
 
-    .header__bottom .header__bottom-logo {
+    .b-header .header__bottom .header__bottom-logo {
         width: 122px;
         height: 64px;
     }
@@ -121,7 +121,8 @@
 
     /*products-sliders*/
 
-    .b-products-sliders .hero__arrow-wrapper {
+    .b-products-sliders .hero__arrow-wrapper,
+    .b-diplomas-sliders .hero__arrow-wrapper{
         display: none;
     }
 }

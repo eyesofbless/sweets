@@ -54,3 +54,37 @@ const productsSwiper = new Swiper('.js-products-sliders', {
         }
     },
 });
+
+const diplomasSwiper = new Swiper('.js-diplomas-sliders', {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.js-diplomas-btn-next',
+        prevEl: '.js-diplomas-btn-prev',
+    },
+    pagination: {
+        el: '.js-diplomas-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+
+        320: {
+            slidesPerView: 1,
+        },
+        584: {
+            slidesPerView: 2,
+        },
+        788: {
+            slidesPerView: 3,
+        },
+        948: {
+            slidesPerView: 4,
+        },
+        1151: {
+            slidesPerView: 5,
+        },
+        1400: {
+            slidesPerView: 6,
+        }
+    },
+});
