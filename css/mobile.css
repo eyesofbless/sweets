@@ -42,7 +42,7 @@
     }
 
     .b-footer .footer__form {
-        bottom: 600px;
+        bottom: 660px;
     }
 
     .b-footer .footer__media {
@@ -59,6 +59,10 @@
 
     .b-footer .footer__logo .footer__partner {
         display: none;
+    }
+
+    .b-footer .footer__logo .footer__list-btn {
+        display: block;
     }
 
     .b-footer .footer__products-wrapper .footer__partner {
@@ -188,8 +192,8 @@
 
     /*products-sliders*/
 
-    .b-products-sliders .hero__arrow-wrapper,
-    .b-diplomas-sliders .hero__arrow-wrapper{
+    .b-products-sliders .b-swiper-btn,
+    .b-diplomas-sliders .b-swiper-btn{
         display: none;
     }
 }

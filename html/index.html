@@ -8,470 +8,52 @@
     <link rel="stylesheet" href="../css/mobile.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <title>sweets</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <title>Фунтик</title>
 </head>
 <body>
-<header class="b-header">
-    <div class="header__top">
-        <div class="header__top-content">
-            <div class="header__top-languages">
-                <a href="#">Ru</a><span>|</span><a href="#">En</a>
-            </div>
-            <div class="header__top-contacts">
-                <span>350039 Россия, г. Краснодар, проезд Майский, 5</span>
-                <a href="tel:+79184482593">+7 918 448 25 93</a>
-                <a href="tel:+78612650913">+7 861 265 09 13</a>
-                <a href="mailto:fyntik_01@list.ru">fyntik_01@list.ru</a>
-            </div>
-        </div>
-    </div>
-    <div class="header__bottom">
-        <div class="header__bottom-content">
-            <img class="header__bottom-burger-icon" src="../images/burger-icon.svg" alt="burger-icon">
-            <img class="header__bottom-logo" src="../images/logo.svg" alt="logo">
-            <nav>
-                <a href="#">О НАС</a>
-                <a href="#">ПРОДУКЦИЯ</a>
-                <a href="#">СОТРУДНИЧЕСТВО</a>
-                <a href="#">КОНТАКТЫ</a>
-            </nav>
-            <div class="header__bottom-search-icon">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.746 20.2012L17.6571 16.1413C19.2443 14.1604 20.0129 11.646 19.8049 9.11515C19.597 6.58433 18.4282 4.22945 16.539 2.53473C14.6498 0.84001 12.1837 -0.0657412 9.64785 0.00371896C7.11197 0.0731791 4.69906 1.11257 2.90526 2.90817C1.11146 4.70378 0.0731058 7.11911 0.00371524 9.65752C-0.0656753 12.1959 0.839169 14.6645 2.53219 16.5556C4.22521 18.4467 6.57773 19.6166 9.10601 19.8248C11.6343 20.033 14.1462 19.2636 16.1251 17.6748L20.181 21.7347C20.3918 21.9155 20.663 22.0099 20.9404 21.9992C21.2178 21.9885 21.4809 21.8733 21.6772 21.6769C21.8735 21.4804 21.9885 21.217 21.9992 20.9393C22.0099 20.6617 21.9155 20.3902 21.735 20.1792L21.746 20.2012ZM2.22729 9.95217C2.22739 8.68222 2.54035 7.43188 3.13847 6.31191C3.73658 5.19195 4.60139 4.23691 5.65629 3.53141C6.71119 2.8259 7.92363 2.3917 9.18621 2.26725C10.4488 2.14281 11.7225 2.33196 12.8946 2.81797C14.0667 3.30397 15.101 4.07182 15.9059 5.05351C16.7107 6.03519 17.2613 7.20041 17.5088 8.44596C17.7564 9.69151 17.6932 10.9789 17.325 12.1942C16.9567 13.4095 16.2948 14.5151 15.3977 15.4132C14.3188 16.4933 12.9441 17.2289 11.4475 17.527C9.95084 17.825 8.39954 17.672 6.98976 17.0875C5.57998 16.5029 4.37503 15.513 3.52731 14.2429C2.6796 12.9728 2.22718 11.4796 2.22729 9.95217Z"
+<div class="b-overlay" id="b-overlay" onclick="toggleMenu()"></div>
+    <div class="b-sidebar">
+        <div class="sidebar__router">
+            <div class="sidebar__router-content">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.222094 5.3902L4.67222 9.84025C4.77515 9.94325 4.91255 10 5.05905 10C5.20555
+                    10 5.34295 9.94325 5.44588 9.84025L5.7736 9.51261C5.98685 9.29911 5.98685 8.95212 5.7736
+                    8.73895L2.03671 5.00207L5.77774 1.26105C5.88067 1.15804 5.9375 1.02072 5.9375 0.874302C5.9375
+                     0.727718 5.88067 0.590402 5.77774 0.487313L5.45002 0.159755C5.34702 0.0567475 5.2097 1.0173e-06 5.0632
+                     1.03011e-06C4.91669 1.04292e-06 4.7793 0.0567475 4.67637 0.159755L0.222094 4.61387C0.118924 4.7172 0.0622578
+                     4.85516 0.062583 5.00183C0.0622578 5.14906 0.118924 5.28695 0.222094 5.3902Z"
                           fill="#333333"/>
                 </svg>
-
+                <span>Главная</span>
             </div>
-            <button>ПРАЙС-ЛИСТ</button>
-            <div class="header__top-languages">
-                <a href="#">Ru</a><span>|</span><a href="#">En</a>
-            </div>
+            <svg onclick="toggleMenu()" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8.48535" y="7.07104" width="22" height="2" transform="rotate(45 8.48535 7.07104)"
+                      fill="#333333"/>
+                <rect x="24.0417" y="8.48523" width="22" height="2" transform="rotate(135 24.0417 8.48523)"
+                      fill="#333333"/>
+            </svg>
         </div>
-    </div>
-</header>
-<main>
-    <h1>ФУНТИК</h1>
-    <div class="b-hero">
-        <div class="js-hero-btn-prev hero__arrow-wrapper">
-            <div class="hero__arrow">
-                <i class="hero__arrow-left"></i>
-            </div>
-        </div>
-        <div class="js-hero-sliders hero__sliders">
-            <div class="swiper-wrapper hero__sliders-wrapper">
-                <div class="swiper-slide hero__slider" data-bg="/images/hero.webp">
-                    <div class="hero__slider-content">
-                        <span>Какао 3в1</span>
-                        <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
-                        <span>Вкус, любимый <br> с детства</span>
-                    </div>
+        <nav class="sidebar__navigation">
+            <a class="sidebar__navigation-item" href="#">О нас</a>
+            <div class="sidebar__navigation-item">
+                <div class="sidebar__navigation-item-link">
+                    <a href="#">Продукция</a>
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.222094 5.3902L4.67222 9.84025C4.77515 9.94325 4.91255 10 5.05905 10C5.20555
+                    10 5.34295 9.94325 5.44588 9.84025L5.7736 9.51261C5.98685 9.29911 5.98685 8.95212 5.7736
+                    8.73895L2.03671 5.00207L5.77774 1.26105C5.88067 1.15804 5.9375 1.02072 5.9375 0.874302C5.9375
+                     0.727718 5.88067 0.590402 5.77774 0.487313L5.45002 0.159755C5.34702 0.0567475 5.2097 1.0173e-06 5.0632
+                     1.03011e-06C4.91669 1.04292e-06 4.7793 0.0567475 4.67637 0.159755L0.222094 4.61387C0.118924 4.7172 0.0622578
+                     4.85516 0.062583 5.00183C0.0622578 5.14906 0.118924 5.28695 0.222094 5.3902Z"
+                              fill="#333333"/>
+                    </svg>
                 </div>
-                <div class="swiper-slide hero__slider" data-bg="/images/hero2.webp">
-                    <div class="hero__slider-content">
-                        <span>Какао 3в2</span>
-                        <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
-                        <span>Вкус, любимый <br> с детства</span>
-                    </div>
-                </div>
-                <div class="swiper-slide hero__slider" data-bg="/images/hero.webp">
-                    <div class="hero__slider-content">
-                        <span>Какао 3в3</span>
-                        <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
-                        <span>Вкус, любимый <br> с детства</span>
-                    </div>
-                </div>
-            </div>
-            <div class="js-hero-pagination hero__pagination"></div>
-        </div>
-        <div class="js-hero-btn-next hero__arrow-wrapper">
-            <div class="hero__arrow">
-                <i class="hero__arrow-right"></i>
-            </div>
-        </div>
-    </div>
-    <div class="b-products">
-        <div class="products__content">
-            <div class="products__item">
-                <div>
-                    <span>Какао 3 в 1</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img src="../images/products/cocoa-blue.webp" alt="product-image">
-            </div>
-            <div class="products__item">
-                <div>
-                    <span>i Какао 3 в 1</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img src="../images/products/cocoa-yellow.webp" alt="product-image">
-            </div>
-            <div class="products__item">
-                <div>
-                    <span>Калмыцкий <br> чай 3 в 1</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img src="../images/products/tea-pink.webp" alt="product-image">
-            </div>
-            <div class="products__item">
-                <div>
-                    <span>Чай 3 в 1</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img src="../images/products/tea-orange.webp" alt="product-image">
-            </div>
-            <div class="products__item">
-                <div>
-                    <span>Кисель</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img src="../images/products/jelly-violet.webp" alt="product-image">
-            </div>
-            <div class="products__item">
-                <div>
-                    <span>Кисель с кусочками фруктов</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img src="../images/products/jelly-yellow.webp" alt="product-image">
-            </div>
-            <div class="products__item">
-                <div>
-                    <span>Кофе 3 в 1</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img src="../images/products/coffee.webp" alt="product-image">
-            </div>
-            <div class="products__item">
-                <div>
-                    <span>Шоу-Боксы</span>
-                    <img src="../images/arrow-icon.svg" alt="arrow-icon">
-                </div>
-                <a class="products__item-link" href="#"></a>
-                <img class="products__item-desktop" src="../images/products/packs.webp" alt="product-image">
-                <img class="products__item-tablet" src="../images/products/packs-adaptive.webp" alt="product-image">
-            </div>
-        </div>
-    </div>
-    <div class="b-product-description">
-        <h2>«Фунтик» моментальные напитки со знаком «Качество кубани»</h2>
-        <p>
-            ООО «Партнер Т» представляет серию моментальных напитков в порционных
-            пакетиках: какао, чай, ягодный и молочный кисель. Проверенный временем продукт
-            успешно продается более, чем в 10 регионах России.
-            Напитки быстрого приготовления – это один тех товаров,
-            которые должны присутствовать в ассортименте каждого
-            магазина. Это востребованный продукт, который дает
-            возможность быстро и без хлопот получить вкусный,
-            полезный напиток в дороге, в офисе и даже дома.
-
-        </p>
-        <div class="product-description__items">
-            <div class="product-description__item">
-                <img src="../images/product-description/price.svg" alt="product-description">
-                <div>
-                    <h3>Цена от производителя</h3>
-                    <span>Возможность хорошей наценки при сохранении доступной розничной цены</span>
-                </div>
-            </div>
-            <div class="product-description__item">
-                <img src="../images/product-description/cherry.svg" alt="product-description">
-                <div>
-                    <h3>Натуральный состав</h3>
-                    <span>Продукт на основе натуральных компонентов, который выбирают чаще других</span>
-                </div>
-            </div>
-            <div class="product-description__item">
-                <img src="../images/product-description/family.svg" alt="product-description">
-                <div>
-                    <h3>Целевая аудитория</h3>
-                    <span>Широкая целевая аудитория: дети, молодежь, взрослые</span>
-                </div>
-            </div>
-            <div class="product-description__item">
-                <img src="../images/product-description/calendar.svg" alt="product-description">
-                <div>
-                    <h3>Легко хранить</h3>
-                    <span>Длительный срок хранения, нетребовательны к складским условиям</span>
-                </div>
-            </div>
-            <div class="product-description__item">
-                <img src="../images/product-description/plastic.svg" alt="product-description">
-                <div>
-                    <h3>Удобный формат</h3>
-                    <span>Герметичная непрозрачная упаковка, сохраняющая вкус.</span>
-                </div>
-            </div>
-            <div class="product-description__item">
-                <img src="../images/product-description/package.svg" alt="product-description">
-                <div>
-                    <h3>Яркий дизайн</h3>
-                    <span>Яркая, заметная упаковка, удобный формат – на 1 порцию</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="b-products-sliders">
-        <h2>
-            Популярные товары
-        </h2>
-        <div class="products-sliders__content">
-            <div class="js-products-btn-prev hero__arrow-wrapper">
-                <div class="hero__arrow">
-                    <i class="hero__arrow-left"></i>
-                </div>
-            </div>
-            <div class="js-products-sliders products-sliders__swiper">
-                <div class="swiper-wrapper products-sliders__swiper-wrapper">
-                    <div class="swiper-slide products-sliders__slider">
-                        <div class="products-sliders__slider-content">
-                            <a href="#">
-                                <img src="../images/products-slider/cocoa.webp" alt="">
-                            </a>
-                            <a class="products-sliders__slider-link" href="#">
-                                <h3>Какао 3в1 «Сицилийский апельсин»</h3>
-                            </a>
-                            <span class="products-sliders__slider-price"><b>200</b> ₽</span>
-                            <span class="products-sliders__slider-count">упаковка 20 шт</span>
-                            <button>Заказать</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-sliders__slider">
-                        <div class="products-sliders__slider-content">
-                            <a href="#">
-                                <img src="../images/products-slider/jelly-white.webp" alt="">
-                            </a>
-                            <a class="products-sliders__slider-link" href="#">
-                                <h3>Кисель Клюквенный моментальный</h3>
-                            </a>
-                            <span class="products-sliders__slider-price"><b>200</b> ₽</span>
-                            <span class="products-sliders__slider-count">упаковка 20 шт</span>
-                            <button>Заказать</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-sliders__slider">
-                        <div class="products-sliders__slider-content">
-                            <a href="#">
-                                <img src="../images/products-slider/jelly-orange.webp" alt="">
-                            </a>
-                            <a class="products-sliders__slider-link" href="#">
-                                <h3>Кисель Персиковый моментальный</h3>
-                            </a>
-                            <span class="products-sliders__slider-price"><b>200</b> ₽</span>
-                            <span class="products-sliders__slider-count">упаковка 20 шт</span>
-                            <button>Заказать</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-sliders__slider">
-                        <div class="products-sliders__slider-content">
-                            <a href="#">
-                                <img src="../images/products-slider/jelly-blue.webp" alt="">
-                            </a>
-                            <a class="products-sliders__slider-link" href="#">
-                                <h3>Кисель Молочный моментальный</h3>
-                            </a>
-                            <span class="products-sliders__slider-price"><b>200</b> ₽</span>
-                            <span class="products-sliders__slider-count">упаковка 20 шт</span>
-                            <button>Заказать</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide products-sliders__slider">
-                        <div class="products-sliders__slider-content">
-                            <a href="#">
-                                <img src="../images/products-slider/cocoa.webp" alt="">
-                            </a>
-                            <a class="products-sliders__slider-link" href="#">
-                                <h3>Какао 3в1 «Сицилийский апельсин»</h3>
-                            </a>
-                            <span class="products-sliders__slider-price"><b>200</b> ₽</span>
-                            <span class="products-sliders__slider-count">упаковка 20 шт</span>
-                            <button>Заказать</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="js-products-pagination hero__pagination"></div>
-            </div>
-            <div class="js-products-btn-next hero__arrow-wrapper">
-                <div class="hero__arrow">
-                    <i class="hero__arrow-right"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="b-advantages">
-        <h2>С нами надежно и удобно работать</h2>
-        <p>Собственная линия по производству и фасовке пакетированных
-            напитков «3 в 1» открыта в 2002 году.
-        </p>
-        <p class="advantages__description">
-            Компания постоянно принимает участие в региональных и
-            всероссийских выставках, презентациях по городам России,
-            неоднократно отмечена дипломами, медалями и гран-при.
-            В рамках губернаторской программы «Качество» Краснодарского
-            края всей продукции компании присвоен знак «Качество».
-        </p>
-        <div class="advantages__rewards">
-            <div>
-                <img src="../images/advantages/cups.svg" alt="cup">
-            </div>
-            <div>
-                <img src="../images/advantages/rewards.svg" alt="rewards">
-            </div>
-        </div>
-        <div class="advantages__points">
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/storage.svg" alt="cup">
-                <p>Оптовые поставки напрямую от производителя</p>
-            </div>
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/laurel.svg" alt="cup">
-                <p>Гарантия высокого качества всех продуктов</p>
-            </div>
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/price-tag.svg" alt="cup">
-                <p>Гибкая система оплаты, скидки для постоянных клиентов</p>
-            </div>
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/editor.svg" alt="cup">
-                <p>Индивидуальный подход к формированию заказов</p>
-            </div>
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/layout.svg" alt="cup">
-                <p>Предоставляем рекламные материалы для продвижения</p>
-            </div>
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/files.svg" alt="cup">
-                <p>Полный комплект документов, вся продукция сертифицирована</p>
-            </div>
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/warehouse.svg" alt="cup">
-                <p>На нашем складе постоянно имеется в наличии весь ассортимент</p>
-            </div>
-            <div class="advantages__point">
-                <img src="../images/advantages/icons/delivery-truck.svg" alt="cup">
-                <p>Удобные схемы поставки, в зависимости
-                    от торговой точки</p>
-            </div>
-        </div>
-    </div>
-    <div class="b-diplomas-sliders">
-        <h2>
-            Наши награды
-        </h2>
-        <div class="diplomas-sliders__content">
-            <div class="js-diplomas-btn-prev hero__arrow-wrapper">
-                <div class="hero__arrow">
-                    <i class="hero__arrow-left"></i>
-                </div>
-            </div>
-            <div class="js-diplomas-sliders diplomas-sliders__swiper ">
-                <div class="swiper-wrapper diplomas-sliders__swiper-wrapper">
-                    <div class="swiper-slide diplomas-sliders__slider">
-                        <div class="diplomas-sliders__slider-content">
-                            <img src="/images/diplomas/diploma-1.webp" alt="diploma-1">
-                        </div>
-                    </div>
-                    <div class="swiper-slide diplomas-sliders__slider">
-                        <div class="diplomas-sliders__slider-content">
-                            <img src="/images/diplomas/diploma-2.webp" alt="diploma-2">
-                        </div>
-                    </div>
-                    <div class="swiper-slide diplomas-sliders__slider">
-                        <div class="diplomas-sliders__slider-content">
-                            <img src="/images/diplomas/diploma-3.webp" alt="diploma-3">
-                        </div>
-                    </div>
-                    <div class="swiper-slide diplomas-sliders__slider">
-                        <div class="diplomas-sliders__slider-content">
-                            <img src="/images/diplomas/diploma-4.webp" alt="diploma-4">
-                        </div>
-                    </div>
-                    <div class="swiper-slide diplomas-sliders__slider">
-                        <div class="diplomas-sliders__slider-content">
-                            <img src="/images/diplomas/diploma-5.webp" alt="diploma-5">
-                        </div>
-                    </div>
-                    <div class="swiper-slide diplomas-sliders__slider">
-                        <div class="diplomas-sliders__slider-content">
-                            <img src="/images/diplomas/diploma-6.webp" alt="diploma-6">
-                        </div>
-                    </div>
-                    <div class="swiper-slide diplomas-sliders__slider">
-                        <div class="diplomas-sliders__slider-content">
-                            <img src="/images/diplomas/diploma-6.webp" alt="diploma-6">
-                        </div>
-                    </div>
-                </div>
-                <div class="js-diplomas-pagination hero__pagination"></div>
-            </div>
-            <div class="js-diplomas-btn-next hero__arrow-wrapper">
-                <div class="hero__arrow">
-                    <i class="hero__arrow-right"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-<footer class="b-footer">
-    <div class="footer__form">
-        <h2>Заказ продукции</h2>
-        <span class="footer__form-description">Команда высококвалифицированных менеджеров обеспечит вас
-подробной информацией о продукции, оперативно обработает
-заказ и организует его отправку.
-        </span>
-        <form>
-            <div class="footer__form-inputs">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Телефон">
-                <input type="text" placeholder="E-mail">
-            </div>
-            <textarea placeholder="Что бы вы хотели заказать"></textarea>
-        </form>
-        <span class="footer__form-privacy">Нажимая кнопку, вы соглашаетесь с условиями Политики конфиденциальности</span>
-        <button>отправить</button>
-    </div>
-    <div class="footer__content">
-        <div class="footer__logo">
-            <img src="/images/logo.svg" alt="logo">
-            <button class="footer__list-btn">Прайс-лист</button>
-            <span class="footer__partner">
-                © ООО «Партнер Т» Производство Быстрорастворимых напитков «Фунтик»
-            </span>
-        </div>
-        <div class="footer__info">
-            <div class="footer__info-content">
-                    <span class="footer__address">
-                        350039 Россия, г. Краснодар, проезд Майский, 5
-                    </span>
-                <a class="footer__telephone" href="tel:+78612650913">
-                    +7 861 265 09 13
-                </a>
-                <a href="mailto:fyntik_01@list.ru">
-                    fyntik_01@list.ru
-                </a>
-                <div class="footer__media">
-                    <a href="#">
-                        <img src="/images/media/youtube.svg" alt="phone">
-                    </a>
-                    <a href="#">
-                        <img src="/images/media/vk.svg" alt="phone">
-                    </a>
-                    <a href="#">
-                        <img src="/images/media/facebook.svg" alt="phone">
-                    </a>
-                    <a href="#">
-                        <img src="/images/media/instagram.svg" alt="phone">
-                    </a>
-                </div>
-                <a class="footer__privacy" href="#">Политика конфиденциальности</a>
-            </div>
-            <div class="footer__products-wrapper">
-                <div class="footer__products">
+                <div class="sidebar__products">
                     <a href="#">Какао 3 в 1</a>
                     <a href="#">i Какао 3 в 1</a>
                     <a href="#">Калмыцкий чай 3 в 1</a>
@@ -481,17 +63,500 @@
                     <a href="#">Кофе 3 в 1</a>
                     <a href="#">Шоу-Боксы</a>
                 </div>
-                <div class="footer__contacts">
-                    <span class="footer__partner">
-                        © ООО «Партнер Т» Производство Быстрорастворимых напитков «Фунтик»
-                    </span>
-                    <a href="#">Разработка и маркетинг — WebCanape</a>
-                    <button class="footer__list-btn">Прайс-лист</button>
+            </div>
+            <a class="sidebar__navigation-item" href="#">Сотрудничество</a>
+            <a class="sidebar__navigation-item" href="#">Контакты</a>
+        </nav>
+        <div class="sidebar__contacts">
+            <span>350039 Россия, г. Краснодар, проезд Майский, 5</span>
+            <span>+7 918 448 25 93</span>
+            <span>+7 861 265 09 13</span>
+            <span>fyntik_01@list.ru</span>
+        </div>
+        <button>ПРАЙС-ЛИСТ</button>
+    </div>
+    <header class="b-header">
+        <div class="header__top">
+            <div class="header__top-content">
+                <div class="header__top-languages">
+                    <a href="#">Ru</a><span>|</span><a href="#">En</a>
+                </div>
+                <div class="header__top-contacts">
+                    <span>350039 Россия, г. Краснодар, проезд Майский, 5</span>
+                    <a href="tel:+79184482593">+7 918 448 25 93</a>
+                    <a href="tel:+78612650913">+7 861 265 09 13</a>
+                    <a href="mailto:fyntik_01@list.ru">fyntik_01@list.ru</a>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="../js/swiper.js"></script>
+        <div class="header__bottom">
+            <div class="header__bottom-content">
+                <img onclick="toggleMenu()" class="header__bottom-burger-icon" src="../images/burger-icon.svg" alt="burger-icon">
+                <img class="header__bottom-logo" src="../images/logo.svg" alt="logo">
+                <nav>
+                    <a href="#">О НАС</a>
+                    <a href="#">ПРОДУКЦИЯ</a>
+                    <a href="#">СОТРУДНИЧЕСТВО</a>
+                    <a href="#">КОНТАКТЫ</a>
+                </nav>
+                <div class="header__bottom-search-icon">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.746 20.2012L17.6571 16.1413C19.2443 14.1604 20.0129 11.646 19.8049 9.11515C19.597 6.58433 18.4282 4.22945 16.539 2.53473C14.6498 0.84001 12.1837 -0.0657412 9.64785 0.00371896C7.11197 0.0731791 4.69906 1.11257 2.90526 2.90817C1.11146 4.70378 0.0731058 7.11911 0.00371524 9.65752C-0.0656753 12.1959 0.839169 14.6645 2.53219 16.5556C4.22521 18.4467 6.57773 19.6166 9.10601 19.8248C11.6343 20.033 14.1462 19.2636 16.1251 17.6748L20.181 21.7347C20.3918 21.9155 20.663 22.0099 20.9404 21.9992C21.2178 21.9885 21.4809 21.8733 21.6772 21.6769C21.8735 21.4804 21.9885 21.217 21.9992 20.9393C22.0099 20.6617 21.9155 20.3902 21.735 20.1792L21.746 20.2012ZM2.22729 9.95217C2.22739 8.68222 2.54035 7.43188 3.13847 6.31191C3.73658 5.19195 4.60139 4.23691 5.65629 3.53141C6.71119 2.8259 7.92363 2.3917 9.18621 2.26725C10.4488 2.14281 11.7225 2.33196 12.8946 2.81797C14.0667 3.30397 15.101 4.07182 15.9059 5.05351C16.7107 6.03519 17.2613 7.20041 17.5088 8.44596C17.7564 9.69151 17.6932 10.9789 17.325 12.1942C16.9567 13.4095 16.2948 14.5151 15.3977 15.4132C14.3188 16.4933 12.9441 17.2289 11.4475 17.527C9.95084 17.825 8.39954 17.672 6.98976 17.0875C5.57998 16.5029 4.37503 15.513 3.52731 14.2429C2.6796 12.9728 2.22718 11.4796 2.22729 9.95217Z"
+                              fill="#333333"/>
+                    </svg>
+
+                </div>
+                <button>ПРАЙС-ЛИСТ</button>
+                <div class="header__top-languages">
+                    <a href="#">Ru</a><span>|</span><a href="#">En</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>ФУНТИК</h1>
+        <div class="b-hero">
+            <div class="js-hero-btn-prev b-swiper-btn">
+                <div class=" swiper-btn__content ">
+                    <i class="swiper-btn__content-left "></i>
+                </div>
+            </div>
+            <div class="js-hero-sliders hero__sliders">
+                <div class="swiper-wrapper hero__sliders-wrapper">
+                    <div class="swiper-slide hero__slider" data-bg="/images/hero.webp">
+                        <div class="hero__slider-content">
+                            <span>Какао 3в1</span>
+                            <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
+                            <span>Вкус, любимый <br> с детства</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hero__slider" data-bg="/images/hero2.webp">
+                        <div class="hero__slider-content">
+                            <span>Какао 3в2</span>
+                            <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
+                            <span>Вкус, любимый <br> с детства</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide hero__slider" data-bg="/images/hero.webp">
+                        <div class="hero__slider-content">
+                            <span>Какао 3в3</span>
+                            <span>Апельсин / Клубника / Банан / Карамель / Ром</span>
+                            <span>Вкус, любимый <br> с детства</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-hero-pagination hero__pagination"></div>
+            </div>
+            <div class="js-hero-btn-next b-swiper-btn">
+                <div class="swiper-btn__content">
+                    <i class="swiper-btn__content-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="b-products">
+            <div class="products__content">
+                <div class="products__item">
+                    <div>
+                        <span>Какао 3 в 1</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img src="../images/products/cocoa-blue.webp" alt="product-image">
+                </div>
+                <div class="products__item">
+                    <div>
+                        <span>i Какао 3 в 1</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img src="../images/products/cocoa-yellow.webp" alt="product-image">
+                </div>
+                <div class="products__item">
+                    <div>
+                        <span>Калмыцкий <br> чай 3 в 1</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img src="../images/products/tea-pink.webp" alt="product-image">
+                </div>
+                <div class="products__item">
+                    <div>
+                        <span>Чай 3 в 1</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img src="../images/products/tea-orange.webp" alt="product-image">
+                </div>
+                <div class="products__item">
+                    <div>
+                        <span>Кисель</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img src="../images/products/jelly-violet.webp" alt="product-image">
+                </div>
+                <div class="products__item">
+                    <div>
+                        <span>Кисель с кусочками фруктов</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img src="../images/products/jelly-yellow.webp" alt="product-image">
+                </div>
+                <div class="products__item">
+                    <div>
+                        <span>Кофе 3 в 1</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img src="../images/products/coffee.webp" alt="product-image">
+                </div>
+                <div class="products__item">
+                    <div>
+                        <span>Шоу-Боксы</span>
+                        <img src="../images/arrow-icon.svg" alt="arrow-icon">
+                    </div>
+                    <a class="products__item-link" href="#"></a>
+                    <img class="products__item-desktop" src="../images/products/packs.webp" alt="product-image">
+                    <img class="products__item-tablet" src="../images/products/packs-adaptive.webp" alt="product-image">
+                </div>
+            </div>
+        </div>
+        <div class="b-product-description">
+            <h2>«Фунтик» моментальные напитки со знаком «Качество кубани»</h2>
+            <p>
+                ООО «Партнер Т» представляет серию моментальных напитков в порционных
+                пакетиках: какао, чай, ягодный и молочный кисель. Проверенный временем продукт
+                успешно продается более, чем в 10 регионах России.
+                Напитки быстрого приготовления – это один тех товаров,
+                которые должны присутствовать в ассортименте каждого
+                магазина. Это востребованный продукт, который дает
+                возможность быстро и без хлопот получить вкусный,
+                полезный напиток в дороге, в офисе и даже дома.
+
+            </p>
+            <div class="product-description__items">
+                <div class="product-description__item">
+                    <img src="../images/product-description/price.svg" alt="product-description">
+                    <div>
+                        <h3>Цена от производителя</h3>
+                        <span>Возможность хорошей наценки при сохранении доступной розничной цены</span>
+                    </div>
+                </div>
+                <div class="product-description__item">
+                    <img src="../images/product-description/cherry.svg" alt="product-description">
+                    <div>
+                        <h3>Натуральный состав</h3>
+                        <span>Продукт на основе натуральных компонентов, который выбирают чаще других</span>
+                    </div>
+                </div>
+                <div class="product-description__item">
+                    <img src="../images/product-description/family.svg" alt="product-description">
+                    <div>
+                        <h3>Целевая аудитория</h3>
+                        <span>Широкая целевая аудитория: дети, молодежь, взрослые</span>
+                    </div>
+                </div>
+                <div class="product-description__item">
+                    <img src="../images/product-description/calendar.svg" alt="product-description">
+                    <div>
+                        <h3>Легко хранить</h3>
+                        <span>Длительный срок хранения, нетребовательны к складским условиям</span>
+                    </div>
+                </div>
+                <div class="product-description__item">
+                    <img src="../images/product-description/plastic.svg" alt="product-description">
+                    <div>
+                        <h3>Удобный формат</h3>
+                        <span>Герметичная непрозрачная упаковка, сохраняющая вкус.</span>
+                    </div>
+                </div>
+                <div class="product-description__item">
+                    <img src="../images/product-description/package.svg" alt="product-description">
+                    <div>
+                        <h3>Яркий дизайн</h3>
+                        <span>Яркая, заметная упаковка, удобный формат – на 1 порцию</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-products-sliders">
+            <h2>
+                Популярные товары
+            </h2>
+            <div class="products-sliders__content">
+                <div class="js-products-btn-prev b-swiper-btn">
+                    <div class="swiper-btn__content ">
+                        <i class="swiper-btn__content-left"></i>
+                    </div>
+                </div>
+                <div class="js-products-sliders products-sliders__swiper">
+                    <div class="swiper-wrapper products-sliders__swiper-wrapper">
+                        <div class="swiper-slide products-sliders__slider">
+                            <div class="products-sliders__slider-content">
+                                <a href="#">
+                                    <img src="../images/products-slider/cocoa.webp" alt="">
+                                </a>
+                                <a class="products-sliders__slider-link" href="#">
+                                    <h3>Какао 3в1 «Сицилийский апельсин»</h3>
+                                </a>
+                                <span class="products-sliders__slider-price"><b>200</b> ₽</span>
+                                <span class="products-sliders__slider-count">упаковка 20 шт</span>
+                                <button>Заказать</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-sliders__slider">
+                            <div class="products-sliders__slider-content">
+                                <a href="#">
+                                    <img src="../images/products-slider/jelly-white.webp" alt="">
+                                </a>
+                                <a class="products-sliders__slider-link" href="#">
+                                    <h3>Кисель Клюквенный моментальный</h3>
+                                </a>
+                                <span class="products-sliders__slider-price"><b>200</b> ₽</span>
+                                <span class="products-sliders__slider-count">упаковка 20 шт</span>
+                                <button>Заказать</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-sliders__slider">
+                            <div class="products-sliders__slider-content">
+                                <a href="#">
+                                    <img src="../images/products-slider/jelly-orange.webp" alt="">
+                                </a>
+                                <a class="products-sliders__slider-link" href="#">
+                                    <h3>Кисель Персиковый моментальный</h3>
+                                </a>
+                                <span class="products-sliders__slider-price"><b>200</b> ₽</span>
+                                <span class="products-sliders__slider-count">упаковка 20 шт</span>
+                                <button>Заказать</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-sliders__slider">
+                            <div class="products-sliders__slider-content">
+                                <a href="#">
+                                    <img src="../images/products-slider/jelly-blue.webp" alt="">
+                                </a>
+                                <a class="products-sliders__slider-link" href="#">
+                                    <h3>Кисель Молочный моментальный</h3>
+                                </a>
+                                <span class="products-sliders__slider-price"><b>200</b> ₽</span>
+                                <span class="products-sliders__slider-count">упаковка 20 шт</span>
+                                <button>Заказать</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-sliders__slider">
+                            <div class="products-sliders__slider-content">
+                                <a href="#">
+                                    <img src="../images/products-slider/cocoa.webp" alt="">
+                                </a>
+                                <a class="products-sliders__slider-link" href="#">
+                                    <h3>Какао 3в1 «Сицилийский апельсин»</h3>
+                                </a>
+                                <span class="products-sliders__slider-price"><b>200</b> ₽</span>
+                                <span class="products-sliders__slider-count">упаковка 20 шт</span>
+                                <button>Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-products-pagination hero__pagination"></div>
+                </div>
+                <div class="js-products-btn-next b-swiper-btn">
+                    <div class="swiper-btn__content">
+                        <i class="swiper-btn__content-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="b-advantages">
+            <h2>С нами надежно и удобно работать</h2>
+            <p>Собственная линия по производству и фасовке пакетированных
+                напитков «3 в 1» открыта в 2002 году.
+            </p>
+            <p class="advantages__description">
+                Компания постоянно принимает участие в региональных и
+                всероссийских выставках, презентациях по городам России,
+                неоднократно отмечена дипломами, медалями и гран-при.
+                В рамках губернаторской программы «Качество» Краснодарского
+                края всей продукции компании присвоен знак «Качество».
+            </p>
+            <div class="advantages__rewards">
+                <div>
+                    <img src="../images/advantages/cups.svg" alt="cup">
+                </div>
+                <div>
+                    <img src="../images/advantages/rewards.svg" alt="rewards">
+                </div>
+            </div>
+            <div class="advantages__points">
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/storage.svg" alt="cup">
+                    <p>Оптовые поставки напрямую от производителя</p>
+                </div>
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/laurel.svg" alt="cup">
+                    <p>Гарантия высокого качества всех продуктов</p>
+                </div>
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/price-tag.svg" alt="cup">
+                    <p>Гибкая система оплаты, скидки для постоянных клиентов</p>
+                </div>
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/editor.svg" alt="cup">
+                    <p>Индивидуальный подход к формированию заказов</p>
+                </div>
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/layout.svg" alt="cup">
+                    <p>Предоставляем рекламные материалы для продвижения</p>
+                </div>
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/files.svg" alt="cup">
+                    <p>Полный комплект документов, вся продукция сертифицирована</p>
+                </div>
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/warehouse.svg" alt="cup">
+                    <p>На нашем складе постоянно имеется в наличии весь ассортимент</p>
+                </div>
+                <div class="advantages__point">
+                    <img src="../images/advantages/icons/delivery-truck.svg" alt="cup">
+                    <p>Удобные схемы поставки, в зависимости
+                        от торговой точки</p>
+                </div>
+            </div>
+        </div>
+        <div class="b-diplomas-sliders">
+            <h2>
+                Наши награды
+            </h2>
+            <div class="diplomas-sliders__content">
+                <div class="js-diplomas-btn-prev b-swiper-btn">
+                    <div class="swiper-btn__content">
+                        <i class="swiper-btn__content-left"></i>
+                    </div>
+                </div>
+                <div class="js-diplomas-sliders diplomas-sliders__swiper ">
+                    <div class="swiper-wrapper diplomas-sliders__swiper-wrapper">
+                        <div class="swiper-slide diplomas-sliders__slider">
+                            <div class="diplomas-sliders__slider-content">
+                                <img src="/images/diplomas/diploma-1.webp" alt="diploma-1">
+                            </div>
+                        </div>
+                        <div class="swiper-slide diplomas-sliders__slider">
+                            <div class="diplomas-sliders__slider-content">
+                                <img src="/images/diplomas/diploma-2.webp" alt="diploma-2">
+                            </div>
+                        </div>
+                        <div class="swiper-slide diplomas-sliders__slider">
+                            <div class="diplomas-sliders__slider-content">
+                                <img src="/images/diplomas/diploma-3.webp" alt="diploma-3">
+                            </div>
+                        </div>
+                        <div class="swiper-slide diplomas-sliders__slider">
+                            <div class="diplomas-sliders__slider-content">
+                                <img src="/images/diplomas/diploma-4.webp" alt="diploma-4">
+                            </div>
+                        </div>
+                        <div class="swiper-slide diplomas-sliders__slider">
+                            <div class="diplomas-sliders__slider-content">
+                                <img src="/images/diplomas/diploma-5.webp" alt="diploma-5">
+                            </div>
+                        </div>
+                        <div class="swiper-slide diplomas-sliders__slider">
+                            <div class="diplomas-sliders__slider-content">
+                                <img src="/images/diplomas/diploma-6.webp" alt="diploma-6">
+                            </div>
+                        </div>
+                        <div class="swiper-slide diplomas-sliders__slider">
+                            <div class="diplomas-sliders__slider-content">
+                                <img src="/images/diplomas/diploma-6.webp" alt="diploma-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-diplomas-pagination hero__pagination"></div>
+                </div>
+                <div class="js-diplomas-btn-next b-swiper-btn">
+                    <div class="swiper-btn__content">
+                        <i class="swiper-btn__content-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="b-footer">
+        <div class="footer__form">
+            <h2>Заказ продукции</h2>
+            <span class="footer__form-description">Команда высококвалифицированных менеджеров обеспечит вас
+подробной информацией о продукции, оперативно обработает
+заказ и организует его отправку.
+        </span>
+            <form id="order-form" method="post" action="#" name="order-form">
+                <div class="footer__form-inputs">
+                    <input type="text" name="name" id="name" placeholder="Имя">
+                    <input type="text" name="telephone" id="telephone" placeholder="Телефон">
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                </div>
+                <textarea cols="3" rows="2" placeholder="Что бы вы хотели заказать"></textarea>
+            </form>
+            <span class="footer__form-privacy">Нажимая кнопку, вы соглашаетесь с условиями Политики конфиденциальности</span>
+            <button type="submit" form="order-form">отправить</button>
+        </div>
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="/images/logo.svg" alt="logo">
+                <button class="footer__list-btn">Прайс-лист</button>
+                <span class="footer__partner">
+                © ООО «Партнер Т» Производство Быстрорастворимых напитков «Фунтик»
+            </span>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info-content">
+                    <span class="footer__address">
+                        350039 Россия, г. Краснодар, проезд Майский, 5
+                    </span>
+                    <a class="footer__telephone" href="tel:+78612650913">
+                        +7 861 265 09 13
+                    </a>
+                    <a href="mailto:fyntik_01@list.ru">
+                        fyntik_01@list.ru
+                    </a>
+                    <div class="footer__media">
+                        <a href="#">
+                            <img src="/images/media/youtube.svg" alt="phone">
+                        </a>
+                        <a href="#">
+                            <img src="/images/media/vk.svg" alt="phone">
+                        </a>
+                        <a href="#">
+                            <img src="/images/media/facebook.svg" alt="phone">
+                        </a>
+                        <a href="#">
+                            <img src="/images/media/instagram.svg" alt="phone">
+                        </a>
+                    </div>
+                    <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__products-wrapper">
+                    <div class="footer__products">
+                        <a href="#">Какао 3 в 1</a>
+                        <a href="#">i Какао 3 в 1</a>
+                        <a href="#">Калмыцкий чай 3 в 1</a>
+                        <a href="#">Чай 3 в 1</a>
+                        <a href="#">Кисель</a>
+                        <a href="#">Кисель с кусочками фруктов</a>
+                        <a href="#">Кофе 3 в 1</a>
+                        <a href="#">Шоу-Боксы</a>
+                    </div>
+                    <div class="footer__contacts">
+                    <span class="footer__partner">
+                        © ООО «Партнер Т» Производство Быстрорастворимых напитков «Фунтик»
+                    </span>
+                        <a href="#">Разработка и маркетинг — WebCanape</a>
+                        <button class="footer__list-btn">Прайс-лист</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/swiper.js"></script>
+<script src="../js/sidebar.js"></script>
 </body>
 </html>

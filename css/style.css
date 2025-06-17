@@ -46,6 +46,133 @@ h1 {
     font-style: italic;
 }
 
+/*sidebar*/
+
+.b-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    padding: 25px 12px 70px 20px;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    background-color: white;
+    z-index: 1000;
+    height: 100%;
+}
+
+.b-sidebar.show {
+    left: 0;
+}
+
+.b-sidebar a {
+    text-decoration: none;
+    color: black;
+    transition: 0.1s ease-in-out;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.b-sidebar a:hover {
+    color: #F2656B;
+}
+
+.b-sidebar .sidebar__router {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sidebar__router-content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.b-sidebar .sidebar__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 39px;
+}
+
+.b-sidebar .sidebar__navigation-item {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.b-sidebar .sidebar__navigation-item-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-sidebar .sidebar__navigation-item-link svg {
+    transform: rotate(90deg);
+}
+
+.b-sidebar .sidebar__navigation-item-link svg path {
+    fill: #F2656B;
+}
+
+.b-sidebar .sidebar__products {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.b-sidebar .sidebar__products a {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.b-sidebar .sidebar__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.b-sidebar button {
+    width: min-content;
+    text-wrap: nowrap;
+    border: none;
+    padding: 15px 43px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background-color: #F2656B;
+    margin-bottom: auto;
+}
+
+.b-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.b-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
 /*header*/
 
 .b-header {
@@ -270,16 +397,16 @@ main {
 
 /*arrows*/
 
-.b-hero .hero__arrow-wrapper:after {
+.b-hero .b-swiper-btn:after {
     display: none;
 }
 
-.b-hero .hero__arrow-wrapper {
+.b-hero .b-swiper-btn {
     position: initial;
     cursor: pointer;
 }
 
-.hero__arrow {
+.swiper-btn__content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,23 +421,23 @@ main {
     transition: 0.3s;
 }
 
-.hero__arrow:hover {
+.swiper-btn__content:hover {
     background-color: #F2656B;
 }
 
-.hero__arrow i {
+.swiper-btn__content i {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
 }
 
-.hero__arrow-left {
+.swiper-btn__content-left {
     margin-left: 3px;
     transform: rotate(135deg);
 }
 
-.hero__arrow-right {
+.swiper-btn__content-right {
     margin-right: 3px;
     transform: rotate(-45deg);
 }
@@ -558,13 +685,13 @@ main {
     font-weight: 500;
 }
 
-.b-products-sliders .hero__arrow-wrapper:after,
-.b-diplomas-sliders .hero__arrow-wrapper:after {
+.b-products-sliders .b-swiper-btn:after,
+.b-diplomas-sliders .b-swiper-btn:after {
     display: none;
 }
 
-.b-products-sliders .hero__arrow-wrapper,
-.b-diplomas-sliders .hero__arrow-wrapper {
+.b-products-sliders .b-swiper-btn,
+.b-diplomas-sliders .b-swiper-btn {
     position: initial;
     cursor: pointer;
 }
@@ -644,7 +771,7 @@ main {
 
 .b-footer {
     position: relative;
-    padding: 550px 30px 82px 30px;
+    padding: 550px 60px 82px 60px;
     box-sizing: border-box;
     background: #F2656B;
     background: linear-gradient(90deg, rgba(242, 101, 107, 1) 0%, rgba(254, 184, 30, 1) 100%);
@@ -817,7 +944,7 @@ main {
 
 .b-footer form input,
 .b-footer form textarea {
-    padding: 14px 0 16px 16px;
+    padding: 14px 16px 16px 16px;
     box-sizing: border-box;
     border: 1px solid #ECECEC;
 }

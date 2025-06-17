@@ -30,7 +30,7 @@
 
     /*hero*/
 
-    .b-hero .hero__arrow-wrapper {
+    .b-hero .b-swiper-btn {
         display: none;
     }
 
