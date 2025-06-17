@@ -99,4 +99,67 @@
         gap: 5px;
         align-items: center;
     }
+
+    /*footer*/
+
+    .b-footer .footer__form {
+        padding-top: 59px;
+    }
+
+    .b-footer .footer__form-inputs {
+        flex-direction: column;
+    }
+
+    .b-footer form {
+        width: 100%;
+    }
+
+    .b-footer .footer__form h2 {
+        font-size: 30px;
+    }
+
+    .b-footer .footer__form textarea {
+        height: 120px;
+    }
+
+    /*diplomas-sliders*/
+
+    .b-diplomas-sliders {
+        padding-bottom: 250px;
+    }
+
+}
+
+@media (max-width: 910px) {
+
+    /*footer*/
+
+    .b-footer .footer__products {
+        display: none;
+    }
+
+    .b-footer .footer__info {
+        flex-direction: column;
+    }
+
+    .b-footer .footer__form {
+        bottom:427px
+    }
+
+    .b-footer .footer__info button {
+        display: none;
+    }
+
+    .b-footer .footer__info {
+        width: min-content;
+        text-wrap: nowrap;
+    }
+
+    .footer__list-btn {
+        margin-bottom: 47px;
+    }
+
+    .b-footer .footer__logo img {
+        margin-bottom: 20px;
+    }
 }

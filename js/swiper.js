@@ -29,7 +29,6 @@ function updateHeroBackground(activeSlide) {
 
 const productsSwiper = new Swiper('.js-products-sliders', {
     slidesPerView: 4,
-    loop: true,
     navigation: {
         nextEl: '.js-products-btn-next',
         prevEl: '.js-products-btn-prev',
